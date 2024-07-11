@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <title>Blogs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="bg-body border-0">
+      <nav class="navbar navbar-expand-lg navbar-light b3">
+        <div class="container bg-">
+          <a href="/" class="navbar-brand">
+            <img
+              class="navbar-brand"
+              src="../assets/logo.png"
+              style="
+                height: 80px;
+                width: 80px;
+                transform: scale(3);
+                margin-left: 50px;
+                overflow: hidden;
+              "
+            />
+            <!-- Premium-software -->
+          </a>
+          <button
+            class="navbar-toggler border-info"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- <span class="navbar-toggler-icon"></span> -->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item py-1 px-2">
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item py-1 px-2">
+                <a class="nav-link" aria-current="page" href="/blog">Blog</a>
+              </li>
+
+              <li
+                class="nav-item border px-lg-2 py-1 px-2 border-2 border-primary"
+                style="width: 50px; text-align: center"
+              >
+                <a class="nav-link position-relative" href="/cart">
+                  <!-- <div class="border border-2 border-primary px-2 py-1"> -->
+                  <span
+                    class="position-absolute cbtn top-0 start-100 translate-middle badge rounded-circle bg-primary"
+                  >
+                    0
+                    <!-- <span class="visually-hidden">unread messages</span> -->
+                  </span>
+                  <i class="fa-solid fa-cart-plus text-primary"></i>
+                  <!-- </div> -->
+                  <script>
+                    const cbtn = document.querySelector(".cbtn");
+                    let v = localStorage.getItem("cart");
+                    v = JSON.parse(v);
+                    console.log(v);
+                    cbtn.textContent = v.length;
+                  </script>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="ezy__blogdetails2 light" id="ezy__blogdetails2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <h1 class="ezy__blogdetails2-heading mt-4" id="blog-title">
+              Blog Title
+            </h1>
+
+            <div class="d-flex justify-content-between my-5 me-5">
+              <div class="d-flex align-items-center">
+                <div class="me-2">
+                  <img
+                    src=""
+                    alt=""
+                    class="img-fluid rounded-circle border"
+                    width="47"
+                    id="blog-author-image"
+                  />
+                </div>
+                <div>
+                  <p class="mb-0">By <b id="blog-author"> Name</b></p>
+                </div>
+                <p class="mb-0 ms-3" id="blog-date">Date</p>
+              </div>
+              <div class="ezy__blogdetails2-social">
+                <ul class="nav ezy__footer13-quick-links">
+                  <a href=""><i class="fab fa-facebook me-3"></i></a>
+                  <a href=""><i class="fab fa-instagram me-3"></i></a>
+                  <a href=""><i class="fab fa-whatsapp me-3"></i></a>
+                  <a href=""><i class="fas fa-share-alt me-3"></i></a>
+                </ul>
+              </div>
+            </div>
+
+            <img
+              src="https://cdn.easyfrontend.com/pictures/blog/blog_13_1.jpg"
+              alt=""
+              class="img-fluid rounded"
+              id="blog-image"
+            />
+
+            <div class="ezy__blogdetails2-content mt-5" id="blog-content">
+              <!-- Blog content will be dynamically inserted here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-white py-4 position-relative bottom-0 my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5 class="text-primary">About Us</h5>
+            <p class="">
+              At getdigitalproducts.online, we specialize in providing premium
+              digital solutions. Explore our curated collection of software,
+              eBooks, templates, and more, designed to empower your digital
+              journey with quality and innovation.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5 class="text-primary">Contact Us</h5>
+
+            <p class="">
+              <span><i class="fa-solid fa-envelope"></i></span>
+              help@getdigitalproducts.online
+            </p>
+            <p>
+              <span><i class="fa-solid fa-phone"></i></span> +91-7986177370
+            </p>
+            <p>
+              <span><i class="fa-solid fa-globe"></i></span>
+              getdigitalproducts.online
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5 class="text-primary">Connect With Us</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#" class="text-white fs-4">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://wa.me/+917986177370" class="text-white fs-4">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white fs-4">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div style="height: 50px"></div>
+      <div
+        class="container-fluid bg-dark position-absolute bottom-0"
+        style="min-height: 50px"
+      >
+        <p
+          class="container m-auto row mt-1 justify-content-center align-items-center fs-6 fs-md-5"
+          style="min-height: 50px"
+        >
+          <span class="text-center">
+            Copyright © <span class="f-time"></span>
+            <span class="text-primary">getdigitalproducts.</span> All rights
+            reserved.
+            <br />
+            <!-- <a href="" class="text-decoration-none">
+                <span class="text-secondary">Developed by Sahil</span>
+              </a> -->
+          </span>
+          <br />
+          <script>
+            document.querySelector(".f-time").textContent =
+              new Date().getFullYear();
+          </script>
+        </p>
+      </div>
+    </footer>
+
+    <script type="module">
+      import blogData from "./data.js";
+
+      // Get the 'id' parameter from the URL
+      const id = new URLSearchParams(window.location.search).get("id");
+
+      // Find the blog post data based on the id
+      const post = blogData.find((data) => data.id == id);
+
+      // If the blog post does not exist, redirect to the home page
+      if (!post) {
+        window.location.href = "/";
+      }
+
+      // Display the blog post content
+      document.getElementById("blog-title").textContent = post.title;
+      document.getElementById("blog-author").textContent = post.author;
+      document.getElementById("blog-date").textContent = post.date;
+      document.getElementById("blog-image").src = post.image;
+      document.getElementById("blog-content").innerHTML = post.content;
+    </script>
+  </body>
+</html>

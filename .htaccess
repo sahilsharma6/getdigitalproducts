@@ -2,8 +2,8 @@
 RewriteEngine On
 
 # Redirect non-www to www
-RewriteCond %{HTTP_HOST} ^premiumsoftwaretools\.com [NC]
-RewriteRule ^(.*)$ http://www.premiumsoftwaretools.com/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^getdigitalproducts\.online [NC]
+RewriteRule ^(.*)$ http://www.getdigitalproducts.online/$1 [L,R=301]
 
 # Remove .html extension from URLs
 RewriteCond %{REQUEST_FILENAME} !-d
