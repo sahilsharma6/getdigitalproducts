@@ -30,14 +30,8 @@
           <a href="/" class="navbar-brand">
             <img
               class="navbar-brand"
-              src="assets/logo.png"
-              style="
-                height: 80px;
-                width: 80px;
-                transform: scale(3);
-                margin-left: 50px;
-                overflow: hidden;
-              "
+              src="../assets/logo.png"
+              style="height: 100px"
               alt="logo"
             />
             <!-- Premium-software -->
@@ -81,7 +75,7 @@
                     let v = localStorage.getItem("cart");
                     v = JSON.parse(v);
                     console.log(v);
-                    cbtn.textContent = v.length;
+                    cbtn.textContent = v.length || 0;
                   </script>
                 </a>
               </li>
