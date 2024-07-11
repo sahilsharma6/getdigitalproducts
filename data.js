@@ -11,6 +11,11 @@ const data = [
     priceRange: "Rs. 350 - Rs. 1,500",
 
     description: ["devices", "Ai", "style", "snippets", "instant access"],
+    keywords: [
+      "Quillbot Premium",
+      "Digital products marketplace",
+      "Writing assistance software",
+    ],
   },
   {
     id: 2,
@@ -24,6 +29,11 @@ const data = [
     priceRange: "Rs. 350 - Rs. 1,500",
 
     description: ["devices", "Ai", "style", "snippets", "instant access"],
+    keywords: [
+      "Grammarly Premium",
+      "Digital products marketplace",
+      "Writing assistance software",
+    ],
   },
   {
     id: 3,

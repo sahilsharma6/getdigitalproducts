@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta name="robots" content="index, follow" />
 
     <title>Get Digital Products</title>
@@ -213,20 +214,41 @@
       }
       console.log(pt);
 
+      const metaKeywords = document.createElement("meta");
+      metaKeywords.setAttribute("name", "keywords");
+      metaKeywords.setAttribute(
+        "content",
+        pt.keywords?.join(", ") ||
+          `${pt.name}, digital products, software marketplace"`
+      );
+
+      // Create meta description element
+      const metaDescription = document.createElement("meta");
+      metaDescription.setAttribute("name", "description");
+      metaDescription.setAttribute("content", pt.description?.join(" "));
+
+      console.log(metaDescription);
+      // Get head element and append meta elements
+      const head = document.querySelector("head");
+      console.log(head);
+      head.appendChild(metaKeywords);
+      head.appendChild(metaDescription);
+      // Update meta tags based on product data
+
       const cardData = `
       <div class="container p-5">
         <div class="row">
           <div class="col-md-6">
             <div class="img" style="border: 1px solid">
-              <img src='${pt.img}' class="" />
+              <img src='${pt?.img}' class="" />
             </div>
           </div>
           <div class="col-md-6">
-            <h2>${pt.name}</h2>
+            <h2>${pt?.name}</h2>
             <p class="py-2">
               
             </p>
-            <h3>${pt.priceRange}</h3>
+            <h3>${pt?.priceRange || pt.price.year}</h3>
             <h6 class="text-secondary my-4"><b> Choose validity </b></h6>
             <div class="py-3">
               <button
@@ -270,7 +292,7 @@
 
             <ul class="list-unstyled mt-4">
 
-             ${pt.description
+             ${pt?.description
                .map((d, i) => {
                  console.log(d);
                  return `<li><i class="fa-solid fa-check text-primary mx-2 mt-4"></i>${d}</li>`;
