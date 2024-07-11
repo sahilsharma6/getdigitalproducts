@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customized QR Code</title>
+    <script src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      #qrcode {
+        padding: 20px;
+      }
+
+      #instructions {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 18px;
+      }
+
+      .contain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(213, 80, 80);
+        border: 2px solid #5561ce;
+        height: 450px;
+        max-width: 280px;
+        padding: 10px;
+      }
+
+      .contain a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="contain">
+      <div id="qrcode"></div>
+      <div id="instructions">
+        <p>
+          Send screenshot after paying here at
+          <a href="https://wa.me/+917986177370" class="fs">
+            <i class="fab fa-whatsapp"></i>
+            7986177370
+          </a>
+        </p>
+        <p>
+          or call at this number: <a href="tel:+917986177370">7986177370</a>
+        </p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      const total = localStorage.getItem("total");
+      if (!total || total == 0) {
+        window.location.href = "/";
+      } else {
+        const upiID = "sahilsharma9779512589@okhdfcbank";
+        const am = total;
+        const qrText = `upi://pay?pa=${upiID}&am=${am}`;
+
+        const qrCode = new QRCodeStyling({
+          width: 200,
+          height: 200,
+          data: qrText,
+          dotsOptions: {
+            color: "#5868bf",
+            type: "rounded",
+          },
+          backgroundOptions: {
+            color: "#ffffff",
+          },
+          cornersSquareOptions: {
+            type: "extra-rounded",
+            color: "#5868bf",
+          },
+          cornersDotOptions: {
+            type: "dot",
+            color: "#5868bf",
+          },
+        });
+
+        qrCode.append(document.getElementById("qrcode"));
+      }
+    </script>
+  </body>
+</html>
