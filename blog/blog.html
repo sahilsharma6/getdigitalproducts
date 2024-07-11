@@ -226,6 +226,23 @@
         window.location.href = "/";
       }
 
+      const metaKeywords = document.createElement("meta");
+      metaKeywords.setAttribute("name", "keywords");
+      metaKeywords.setAttribute("content", post.keywords?.join(", ") || `Blog`);
+      console.log(post.keywords);
+
+      // Create meta description element
+      const metaDescription = document.createElement("meta");
+      metaDescription.setAttribute("name", "description");
+      metaDescription.setAttribute("content", post.description || "Blog");
+
+      console.log(metaDescription);
+      // Get head element and append meta elements
+      const head = document.querySelector("head");
+      console.log(head);
+      head.appendChild(metaKeywords);
+      head.appendChild(metaDescription);
+
       // Display the blog post content
       document.getElementById("blog-title").textContent = post.title;
       document.getElementById("blog-author").textContent = post.author;
