@@ -54,7 +54,6 @@ const blogData = [
 Here&rsquo;s an insightful video from Satish K's channel discussing the current state of SEO and strategies for 2024:
 </p>
 <br>
-<p><em><iframe style="width: 482px; height: 270px;" src="https://www.youtube.com/embed/PINo4Uhy5Nk" width="482" height="270" allowfullscreen="allowfullscreen"></iframe></em></p>
 <p><em>Credit: <a href='https://www.youtube.com/@SatishKVideos' target="_blank">Satish K Videos</a>  </em></p>
 
 <p>&nbsp;</p>
