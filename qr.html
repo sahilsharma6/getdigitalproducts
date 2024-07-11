@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Customized QR Code</title>
     <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
     <style>
       .qrcode {
@@ -28,7 +27,7 @@
     <script type="text/javascript">
       //   const am = 1;
       const am = 1;
-      const upiID = encodeURIComponent("kamal-160@paytm");
+      const upiID = encodeURIComponent("");
       const qrText = encodeURIComponent(`upi://pay?pa=${upiID}&am=${am}`); //`upi://pay?pa=${upiID}&am=${am}`;
       var qrcode = new QRCode(document.getElementById("qrcode"), {
         // text: `upi://pay?pa=sahilsharma9779512589@okhdfcbank&am=${am}`,
