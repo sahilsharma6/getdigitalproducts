@@ -19,6 +19,9 @@
   }
 }
 
+a {
+  text-decoration: none;
+}
 /* Gray Block Style */
 .gray .ezy__blog6,
 .ezy__blog6.gray {

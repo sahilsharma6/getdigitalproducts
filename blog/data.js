@@ -63,6 +63,45 @@ Here&rsquo;s an insightful video from Satish K's channel discussing the current 
 <p>&nbsp;</p>
     `,
   },
+  {
+    id: 2,
+    title: `Unlock a 10% Discount on All Products at GetDigitalProducts Online!`,
+    date: "12 July 2024",
+    author: "author",
+    image: "./images/gdpo10.png",
+    description: `How to Get a 10% Discount on Every Product at GetDigitalProducts Online`,
+    keywords: [
+      "discount, GetDigitalProducts Online, 10% discount, digital products, premium software, savings",
+    ],
+    content: `
+    <p>Are you looking to save on premium digital products? We have great news for you! At GetDigitalProducts Online, we're excited to offer an exclusive 10% discount on every product. Follow these simple steps to unlock your savings and enhance your digital experience with our top-notch products.</p>
+<h4>Why Choose GetDigitalProducts Online?</h4>
+<br>
+
+<p>At&nbsp;<a href="https://getdigitalproducts.online" target="_new" rel="noreferrer">getdigitalproducts.online</a>, we specialize in providing high-quality digital solutions. Our curated collection includes software, eBooks, templates, and more, designed to meet your needs and exceed your expectations. Whether you're a student, a professional, or just someone who loves exploring new digital tools, we have something for everyone.</p>
+<br>
+<h4>How to Avail Your 10% Discount</h4>
+<p>Here's how you can easily get a 10% discount on all our products:</p>
+<ol>
+<li><strong>Browse Our Collection</strong>: Visit our website at <a href="https://getdigitalproducts.online" target="_new" rel="noreferrer">getdigitalproducts.online</a> and explore our wide range of digital products.</li>
+<li><strong>Select Your Products</strong>: Add your desired products to the cart.</li>
+<li><strong>Use Discount Code</strong>: At checkout, enter the discount code <code>gdpo10</code> to apply your 10% discount.</li>
+<li><strong>Enjoy Your Savings</strong>: Complete your purchase and enjoy your premium digital products at a discounted price.</li>
+</ol>
+<br>
+<h4>Additional Benefits</h4>
+<ul>
+<li><strong>Quality Assurance</strong>: We guarantee the quality of all our products, ensuring you get the best value for your money.</li>
+<li><strong>Customer Support</strong>: Have questions or need assistance? Our dedicated customer support team is here to help you every step of the way.</li>
+</ul>
+<br>
+
+<h4>Connect With Us</h4>
+<p>We love hearing from our customers! If you have any questions or need further assistance, feel free to reach out to us on WhatsApp. Our support team is available to help you with any queries you may have.</p>
+<p><strong>&nbsp;<a href="https://wa.me/+917986177370" target="_new" rel="noreferrer">Connect with us on WhatsApp</a></strong></p>
+<p>Thank you for choosing GetDigitalProducts Online! Start saving today and make the most of our exclusive 10% discount offer. Happy shopping!</p>
+    `,
+  },
 ];
 
 export default blogData;
