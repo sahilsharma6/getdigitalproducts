@@ -230,13 +230,18 @@
       metaDescription.setAttribute("name", "description");
       metaDescription.setAttribute("content", post.description || "Blog");
 
+      // const title = document.createElement("title");
+
+      // title.textContent = post.title;
+      document.title = post.title;
+
       console.log(metaDescription);
       // Get head element and append meta elements
       const head = document.querySelector("head");
       console.log(head);
       head.appendChild(metaKeywords);
       head.appendChild(metaDescription);
-
+      // head.appendChild(title);
       // Display the blog post content
       document.getElementById("blog-title").textContent = post.title;
       document.getElementById("blog-author").textContent = post.author;
