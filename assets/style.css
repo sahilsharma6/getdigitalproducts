@@ -93,3 +93,9 @@ footer {
   background: #0d6efd;
   color: white;
 }
+
+iframe {
+  max-width: 560px !important;
+  width: 100% !important;
+  height: 315px !important ;
+}

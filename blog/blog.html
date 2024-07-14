@@ -232,7 +232,8 @@
       // const title = document.createElement("title");
 
       // title.textContent = post.title;
-      document.title = post.title;
+      // document.title = post.title;
+      document.head.innerHTML += `<title>${post.title}</title>`;
 
       console.log(metaDescription);
       // Get head element and append meta elements
